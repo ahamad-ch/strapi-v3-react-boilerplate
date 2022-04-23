@@ -1,19 +1,31 @@
 import ReactLogo from './react-logo.svg';
-import './App.scss';
+import StrapiLogo from './strapi-logo.svg';
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="app">
-      <div className="app-content">
-        <img src={ReactLogo} className="react-logo" alt="logo" />
-        <p>Strapi (v4) CMS driven React Application</p>
+    <div className={styles.app}>
+      <div className={styles.appContent}>
+        <div className={styles.appLogosWrapper}>
+          <img src={ReactLogo} className={styles.reactLogo} alt="React" />
+          <img src={StrapiLogo} className={styles.strapiLogo} alt="Strapi" />
+        </div>
+        <p>
+          <a
+            className={styles.strapiLink}
+            href="https://strapi.io/v4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Strapi (v4)
+          </a> CMS driven React Application</p>
         <a
-          className="app-link"
+          className={styles.appLink}
           href="https://github.com/ahamad-ch/strapi-react-boilerplate"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Check code
+          {"<Code />"}
         </a>
       </div>
     </div>
