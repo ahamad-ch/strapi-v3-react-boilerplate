@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import ReactLogo from './react-logo.svg';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className="app">
+      <div className="app-content">
+        <img src={ReactLogo} className="react-logo" alt="logo" />
+        <p>Strapi (v4) CMS driven React Application</p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="app-link"
+          href="https://github.com/ahamad-ch/strapi-react-boilerplate"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Check code
         </a>
-      </header>
+      </div>
     </div>
   );
 }
