@@ -17,15 +17,13 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  width: 50vw;
+  max-width: 500px;
 }
 
 .reactLogo,
 .strapiLogo {
-  width: 200px;
-}
-
-.strapiLogo {
-  padding: 20px;
+  width: 40%;
 }
 
 .strapiLink {
@@ -44,6 +42,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .appLink {
