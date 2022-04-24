@@ -13,11 +13,11 @@ function App() {
         <p>
           <a
             className={styles.strapiLink}
-            href="https://strapi.io/v4"
+            href="https://docs-v3.strapi.io/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Strapi (v4)
+            Strapi (v3)
           </a> CMS driven React Application</p>
         <a
           className={styles.appLink}

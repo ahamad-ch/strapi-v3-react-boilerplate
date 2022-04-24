@@ -1,11 +1,18 @@
-module.exports = ({ env }) => ({
-  connection: {
-    client: 'postgres',
-    connection:{
-      host: "localhost",
-      database: "cms-db",
-      user: "postgres",
-      password: "admin",
-    }
+module.exports = ({ _env }) => ({
+  defaultConnection: 'default',
+  connections: {
+    default: {
+      connector: 'bookshelf',
+      settings: {
+        client: 'postgres',
+        host: "localhost",
+        database: "cms-db",
+        username: 'postgres',
+        password: 'admin',
+      },
+      options: {
+        useNullAsDefault: true,
+      },
+    },
   },
 });
